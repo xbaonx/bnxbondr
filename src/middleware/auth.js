@@ -50,8 +50,8 @@ const authenticateToken = async (req, res, next) => {
 };
 
 // Set demo mode status
-exports.setDemoMode = (status) => {
+const setDemoMode = (status) => {
   isDemoMode = status;
 };
 
-module.exports = { authenticateToken };
+module.exports = { authenticateToken, setDemoMode };
